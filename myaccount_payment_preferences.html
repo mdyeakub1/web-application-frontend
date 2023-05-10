@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Payment Preferences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- All Css link -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/simplebar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/waves.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTable.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/flag-icons-main/css/flag-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2-bootstrap-5-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+
+
+
+    <!-- App Css-->
+    <link href="assets/css/app.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="navbar-items-left ">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-sm px-3 header-item  " id="vertical-menu-btn">
+                        <i class="fa-solid fa-bars align-middle"></i>
+                    </button>
+                    <!-- mail  -->
+                    <div class="d-none d-md-block">
+                        <button class="header-item" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-envelope align-middle"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Email area</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Archive</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- languages  -->
+                    <div class="dropdown d-none d-md-block">
+                        <button class="header-item mx-3" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/flags/us.jpg" alt="" srcset="" height="12">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/spain.jpg" alt="" height="16px" srcset="">
+                                    Spanish</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/germany.jpg" alt="" height="16px"
+                                        srcset="">German</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/italy.jpg" alt="" height="16px" srcset="">Italian</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/russia.jpg" alt="" height="16px"
+                                        srcset="">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-items-center">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box d-block d-md-none">
+                        <a href="index.html" class="logo">
+                            <span class="">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-items">
+                    <div class="header-item support d-none d-md-block"><a href="#"><span
+                                class="me-2 fw-semibold">Support</span><i class="fa-solid fa-life-ring "></i></a></div>
+                    <div class="dropdown">
+                        <button class="header-item dropdown-toggle d-none d-md-block" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            username@gmail.com
+                        </button>
+                        <button class="header-item dropdown-toggle d-block d-md-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu animated fadeInRight" id="snippet--earnignsStats">
+
+                            <li>
+                                <a href="#">Balance: <strong>$0.00 USD</strong></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Pending commission: $0.00 USD</p>
+                                    <p class="m-b-none">Confirmed commission: $0.00 USD</p>
+                                    <p class="m-b-none">Referral commission: $0.00 USD</p>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <div class="center">
+                                    <p class="m-b-xs">Extend login session by:</p>
+                                    <p class="m-b-none">
+                                        <a href="/default/extend-login/">6 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=12">12 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=24">1 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=48">2 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=168">7 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=720">30 d</a>
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="/sign/sign-out/">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="./dashboard.html" class="waves-effect">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./generate_ad_tag.html" class="waves-effect">
+                                <i class="fa-solid fa-tags"></i>
+                                <span>Generate Ad Tags</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./offers.html" class="waves-effect  ">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span>Offers (CPA)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./reports_country_report.html">Country Report</a></li>
+                                <li><a href="./reports_daily_report.html">Daily Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Detailed Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./detailed_reports_CPA_ads_reports.html">CPA Ads Reports</a></li>
+                                <li><a href="./detailed_reports_conversions_report.html">Conversions Reports</a></li>
+                                <li><a href="./detailed_reports_push_ads_reports.html">Push Ads Reports</a></li>
+                                <li><a href="./detailed_reports_subscribers_reports.html">Subscribers Reports</a></li>
+                                <li><a href="./detailed_reports_CPM_CPC_ads_reports.html">CPM/CPC Ads Reports</a></li>
+                                <li><a href="./detailed_reports_google_ADX_reports.html">Google Adx Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>My Account</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./myaccount_general_info.html">General Information</a></li>
+                                <li><a href="./myaccount_payment_preferences.html">Payment Prefarance</a></li>
+                                <li><a href="./myaccount_email_notifications.html">Email Notifications</a></li>
+                                <li><a href="./myaccount_s2s_settings.html">S2S Settings</a></li>
+                                <li><a href="./myaccount_s2s_log.html">S2S Logs</a></li>
+                                <li><a href="./myaccount_my_tracking_domains.html">My Tracking Domains</a></li>
+                                <li><a href="./myaccount_login_history.html">Login History</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./payments.html" class="waves-effect">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html" class="waves-effect">
+                                <i class="fa-solid fa-square-phone-flip"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <span>Affiliate Program</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./affiliate_program_promotion_tools.html">Promosion Tools</a></li>
+                                <li><a href="./affiliate_program_affiliate_statistic.html">Affiliate Statistics</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                <span>File Monitization</span>
+                                <span class="menu-tag">New</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./filemonitization_dashboard.html">Dashboard</a></li>
+                                <li><a href="./filemonitization_file_manager.html">File manager</a></li>
+                                <li><a href="./filemonitization_report.html">Report</a></li>
+                                <li><a href="./filemonitization_settings.html">Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <section class="content">
+                <div class="row equal-cols">
+                    <div class="col-md-6">
+                        <div class="card mb-25">
+                            <div class="card-header">
+                                <p>General Settings</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-15">Please choose the default currency of your Advertica account. This
+                                    currency will be
+                                    used in reports, charts, on the
+                                    dashboard etc. This is not a currency you'll receive payments from us in.</p>
+                                <div class="row mb-15">
+                                    <div class="col-sm-4">
+                                        <label for="form-select" class=" fw-bold">Default currency of your
+                                            account:</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select class=" form-select" id="form-select"
+                                            aria-label="Default select example">
+                                            <option selected>EUR - Euro</option>
+                                            <option value="1">GBP - British pound</option>
+                                            <option value="2">USD - US Dollar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p class="mb-15">Automatic payment requests are <strong>ACTIVE</strong> on your account.
+                                    We'll
+                                    automatically generate
+                                    new payment requests on your account
+                                    every 1st day of the month.</p>
+                                <div class="row ">
+                                    <div class="col-sm-4">
+                                        <label for="form-select" class=" fw-bold">Automatic payment request:</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select class=" form-select" id="form-select"
+                                            aria-label="Default select example">
+                                            <option selected>Active</option>
+                                            <option value="1">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Automatic Payment Requests</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-15">Here you can choose how often you wish to receive payments from us as
+                                    well as your minimal payment amount.</p>
+                                <div class="row mb-15">
+                                    <div class="col-sm-4">
+                                        <label for="form-select" class=" fw-bold">Payment Frequency:</label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <select class=" form-select" id="form-select"
+                                            aria-label="Default select example">
+                                            <option selected>Monthly payments (NET30)</option>
+                                            <option value="1">Monthly payments (NET0)</option>
+                                            <option value="2">Weekly payments</option>
+                                            <option value="3">Daily payments</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-15">
+                                    <div class="col-sm-4">
+                                        <label for="form-select" class=" fw-bold">Minimal payment amount:</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select class=" form-select " id="form-select"
+                                            aria-label="Default select example">
+                                            <option selected>$10</option>
+                                            <option value="1">$25</option>
+                                            <option value="2">$50</option>
+                                            <option value="3">$100</option>
+                                            <option value="4">$250</option>
+                                            <option value="5">$500</option>
+                                            <option value="6">$1000</option>
+                                            <option value="7">$2500</option>
+                                            <option value="8">$5000</option>
+                                            <option value="9">$10000</option>
+                                            <option value="9">Custom</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <p>We'll send you a payment only if you've reached the minimal payment amount.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Payment Details</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-15">Please choose how you would like to get paid from us and which currency
+                                    you want to receive your payments in.</p>
+                                <label for="" class="fw-bold mb-15">Payment Method</label>
+                                <!-- Nav tabs -->
+                                <div class="payment-methods nav nav-tabs" id="myTab" role="tablist">
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link active" id="paypal-tab" data-bs-toggle="tab"
+                                            data-bs-target="#paypal" type="button" role="tab" aria-controls="paypal"
+                                            aria-selected="true">
+                                            <img src="./assets/images/payment/1.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="bank-wire-tab" data-bs-toggle="tab"
+                                            data-bs-target="#bank-wire" type="button" role="tab"
+                                            aria-controls="bank-wire" aria-selected="false">
+                                            <img src="./assets/images/payment/2.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="bitcoin-tab" data-bs-toggle="tab"
+                                            data-bs-target="#bitcoin" type="button" role="tab" aria-controls="bitcoin"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/3.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="ethereum-tab" data-bs-toggle="tab"
+                                            data-bs-target="#ethereum" type="button" role="tab" aria-controls="ethereum"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/4.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="litecoin-tab" data-bs-toggle="tab"
+                                            data-bs-target="#litecoin" type="button" role="tab" aria-controls="litecoin"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/5.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="zcash-tab" data-bs-toggle="tab"
+                                            data-bs-target="#zcash" type="button" role="tab" aria-controls="zcash"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/6.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="dash-tab" data-bs-toggle="tab"
+                                            data-bs-target="#dash" type="button" role="tab" aria-controls="dash"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/7.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="dogecoin-tab" data-bs-toggle="tab"
+                                            data-bs-target="#dogecoin" type="button" role="tab" aria-controls="dogecoin"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/8.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="nav-item payment-method" role="presentation">
+                                        <a href="" class="nav-link " id="tether-tab" data-bs-toggle="tab"
+                                            data-bs-target="#tether" type="button" role="tab" aria-controls="tether"
+                                            aria-selected="false">
+                                            <img src="./assets/images/payment/9.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Tab panes -->
+                                <div class="tab-content mt-30">
+                                    <div class="tab-pane active" id="paypal" role="tabpanel"
+                                        aria-labelledby="paypal-tab" tabindex="0">
+                                        <div class="row mb-15">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control"
+                                                    value="TEST-ACC-DONT-PAY@advertica.com">
+                                            </div>
+                                        </div>
+                                        <p class="mb-15">What currency do you wish to receive payments in?</p>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label for="" class="fw-bold">Payment currency</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class=" form-select" id="form-select"
+                                                    aria-label="Default select example">
+                                                    <option selected>USD</option>
+                                                    <option value="1">ERU</option>
+                                                    <option value="2">Each currency separately</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bank-wire" role="tabpanel" aria-labelledby="bank-wire-tab"
+                                        tabindex="0">
+                                        <div class="row mb-15">
+                                            <div class="col-md-4">
+                                                <label for="" class="fw-bold">Beneficiary:</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control" value="ADVERTICA LTD">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-15">
+                                            <div class="col-md-4">
+                                                <label for="" class="fw-bold">IBAN/Account Number:</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-15">
+                                            <div class="col-md-4">
+                                                <label for="" class="fw-bold">SWIFT:</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <p class="mb-15">What currency do you wish to receive payments in?</p>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <label for="" class="fw-bold">Payment currency</label>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class=" form-select" id="form-select"
+                                                    aria-label="Default select example">
+                                                    <option selected>USD</option>
+                                                    <option value="1">ERU</option>
+                                                    <option value="2">Each currency separately</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="bitcoin" role="tabpanel" aria-labelledby="bitcoin-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current BTC exchange rate: 1 BTC = 23,781.21 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Bitcoin Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="ethereum" role="tabpanel" aria-labelledby="ethereum-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current ETH exchange rate: 1 ETH = 1,655.00 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Ethereum Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="litecoin" role="tabpanel" aria-labelledby="litecoin-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current LTC exchange rate: 1 LTC = 91.83 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="litecoin Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="zcash" role="tabpanel" aria-labelledby="zcash-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current ZEC exchange rate: 1 ZEC = 49.00 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="ZCash Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="dash" role="tabpanel" aria-labelledby="dash-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current DASH exchange rate: 1 DASH = 54.71 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Dash Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="dogecoin" role="tabpanel" aria-labelledby="dogecoin-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current DOGE exchange rate: 1 DOGE = 0.09 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="DogeCoin Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="tether" role="tabpanel" aria-labelledby="tether-tab"
+                                        tabindex="0">
+                                        <p class="fst-italic mb-15">Current USDT exchange rate: 1 USDT = 1.03 USD</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Tether Address">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- save changes button  -->
+                <div class="row mt-30 text-center">
+                    <div class="changes-button ">
+                        <button class="main-btn">Save changes</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer start  -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-center justify-content-center">
+                        <script>document.write(new Date().getFullYear())</script> © Advertica International FZE | All
+                        rights reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer start  -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/dataTable.min.js"></script>
+    <script src="assets/js/dataTableBootstrap5.min.js"></script>
+    <script src="assets/js/jquery.flot.js"></script>
+    <script src="assets/js/jquery.flot.resize.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/responsive.bootstrap.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <!-- select 2 -->
+    <script>
+        $('.select2').select2();
+    </script>
+    <script>
+        $('.table').DataTable({
+            responsive: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

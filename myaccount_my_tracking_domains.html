@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Payment Preferences</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- All Css link -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/simplebar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/waves.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTable.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/flag-icons-main/css/flag-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2-bootstrap-5-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+
+
+
+    <!-- App Css-->
+    <link href="assets/css/app.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="navbar-items-left ">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-sm px-3 header-item  " id="vertical-menu-btn">
+                        <i class="fa-solid fa-bars align-middle"></i>
+                    </button>
+                    <!-- mail  -->
+                    <div class="d-none d-md-block">
+                        <button class="header-item" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-envelope align-middle"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Email area</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Archive</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- languages  -->
+                    <div class="dropdown d-none d-md-block">
+                        <button class="header-item mx-3" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/flags/us.jpg" alt="" srcset="" height="12">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/spain.jpg" alt="" height="16px" srcset="">
+                                    Spanish</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/germany.jpg" alt="" height="16px"
+                                        srcset="">German</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/italy.jpg" alt="" height="16px" srcset="">Italian</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/russia.jpg" alt="" height="16px"
+                                        srcset="">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-items-center">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box d-block d-md-none">
+                        <a href="index.html" class="logo">
+                            <span class="">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-items">
+                    <div class="header-item support d-none d-md-block"><a href="#"><span
+                                class="me-2 fw-semibold">Support</span><i class="fa-solid fa-life-ring "></i></a></div>
+                    <div class="dropdown">
+                        <button class="header-item dropdown-toggle d-none d-md-block" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            username@gmail.com
+                        </button>
+                        <button class="header-item dropdown-toggle d-block d-md-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu animated fadeInRight" id="snippet--earnignsStats">
+
+                            <li>
+                                <a href="#">Balance: <strong>$0.00 USD</strong></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Pending commission: $0.00 USD</p>
+                                    <p class="m-b-none">Confirmed commission: $0.00 USD</p>
+                                    <p class="m-b-none">Referral commission: $0.00 USD</p>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <div class="center">
+                                    <p class="m-b-xs">Extend login session by:</p>
+                                    <p class="m-b-none">
+                                        <a href="/default/extend-login/">6 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=12">12 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=24">1 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=48">2 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=168">7 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=720">30 d</a>
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="/sign/sign-out/">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="./dashboard.html" class="waves-effect">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./generate_ad_tag.html" class="waves-effect">
+                                <i class="fa-solid fa-tags"></i>
+                                <span>Generate Ad Tags</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./offers.html" class="waves-effect  ">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span>Offers (CPA)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./reports_country_report.html">Country Report</a></li>
+                                <li><a href="./reports_daily_report.html">Daily Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Detailed Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./detailed_reports_CPA_ads_reports.html">CPA Ads Reports</a></li>
+                                <li><a href="./detailed_reports_conversions_report.html">Conversions Reports</a></li>
+                                <li><a href="./detailed_reports_push_ads_reports.html">Push Ads Reports</a></li>
+                                <li><a href="./detailed_reports_subscribers_reports.html">Subscribers Reports</a></li>
+                                <li><a href="./detailed_reports_CPM_CPC_ads_reports.html">CPM/CPC Ads Reports</a></li>
+                                <li><a href="./detailed_reports_google_ADX_reports.html">Google Adx Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>My Account</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./myaccount_general_info.html">General Information</a></li>
+                                <li><a href="./myaccount_payment_preferences.html">Payment Prefarance</a></li>
+                                <li><a href="./myaccount_email_notifications.html">Email Notifications</a></li>
+                                <li><a href="./myaccount_s2s_settings.html">S2S Settings</a></li>
+                                <li><a href="./myaccount_s2s_log.html">S2S Logs</a></li>
+                                <li><a href="./myaccount_my_tracking_domains.html">My Tracking Domains</a></li>
+                                <li><a href="./myaccount_login_history.html">Login History</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./payments.html" class="waves-effect">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html" class="waves-effect">
+                                <i class="fa-solid fa-square-phone-flip"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <span>Affiliate Program</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./affiliate_program_promotion_tools.html">Promosion Tools</a></li>
+                                <li><a href="./affiliate_program_affiliate_statistic.html">Affiliate Statistics</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                <span>File Monitization</span>
+                                <span class="menu-tag">New</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./filemonitization_dashboard.html">Dashboard</a></li>
+                                <li><a href="./filemonitization_file_manager.html">File manager</a></li>
+                                <li><a href="./filemonitization_report.html">Report</a></li>
+                                <li><a href="./filemonitization_settings.html">Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Custom Tracking Domains</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-15">Here you can apply for a custom domain that will be used in your
+                                    tracking links and
+                                    ad tags.</p>
+                                <p class="fw-bold">Example of your current tracking link:</p>
+                                <p class="mb-15">
+                                    https://qoaaa.com/1e4931b0559712109535/a2639b740f/?placementName=default</p>
+                                <p class="fw-bold">Example of your tracking link with custom domain:</p>
+                                <p>https://your-domain.com/1e4931b0559712109535/a2639b740f/?placementName=default</p>
+                                <div class="row align-items-center mt-15">
+                                    <div class="col-sm-6">
+                                        <label for="" class="fw-bold">List of available domains:</label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <select class=" form-select" id="form-select"
+                                            aria-label="Default select example">
+                                            <option value="" data-select2-id="2">Please choose...</option>
+                                            <option value="1992" data-select2-id="8">jebab.click</option>
+                                            <option value="1995" data-select2-id="9">hebab.click</option>
+                                            <option value="1998" data-select2-id="10">gebab.click</option>
+                                            <option value="2001" data-select2-id="11">febab.click</option>
+                                            <option value="2004" data-select2-id="12">debab.click</option>
+                                            <option value="2010" data-select2-id="13">bebab.click</option>
+                                            <option value="2022" data-select2-id="14">vabab.click</option>
+                                            <option value="2028" data-select2-id="15">qabab.click</option>
+                                            <option value="2046" data-select2-id="16">yuab.online</option>
+                                            <option value="2052" data-select2-id="17">suab.site</option>
+                                            <option value="2058" data-select2-id="18">juab.site</option>
+                                            <option value="2061" data-select2-id="19">buab.online</option>
+                                            <option value="2064" data-select2-id="20">buab.site</option>
+                                            <option value="2067" data-select2-id="21">qiab.online</option>
+                                            <option value="2070" data-select2-id="22">zeab.online</option>
+                                            <option value="2073" data-select2-id="23">qoab.online</option>
+                                            <option value="2076" data-select2-id="24">ruab.online</option>
+                                            <option value="2079" data-select2-id="25">ruab.site</option>
+                                            <option value="2082" data-select2-id="26">woab.online</option>
+                                            <option value="2088" data-select2-id="27">qoab.site</option>
+                                            <option value="2091" data-select2-id="28">yiab.online</option>
+                                            <option value="2094" data-select2-id="29">yiab.site</option>
+                                            <option value="2097" data-select2-id="30">qiab.site</option>
+                                            <option value="2100" data-select2-id="31">zeab.site</option>
+                                            <option value="2103" data-select2-id="32">xeab.online</option>
+                                            <option value="2106" data-select2-id="33">xeab.site</option>
+                                            <option value="2109" data-select2-id="34">vuab.online</option>
+                                            <option value="2112" data-select2-id="35">vuab.site</option>
+                                            <option value="2118" data-select2-id="36">tuab.site</option>
+                                            <option value="2124" data-select2-id="37">vieb.online</option>
+                                            <option value="2127" data-select2-id="38">vieb.site</option>
+                                            <option value="2130" data-select2-id="39">qieb.online</option>
+                                            <option value="2133" data-select2-id="40">kieb.online</option>
+                                            <option value="2139" data-select2-id="41">yaeb.online</option>
+                                            <option value="2142" data-select2-id="42">yaeb.site</option>
+                                            <option value="2145" data-select2-id="43">xaeb.online</option>
+                                            <option value="2148" data-select2-id="44">xaeb.site</option>
+                                            <option value="2151" data-select2-id="45">waeb.online</option>
+                                            <option value="2154" data-select2-id="46">zuab.online</option>
+                                            <option value="2157" data-select2-id="47">zuab.site</option>
+                                            <option value="2160" data-select2-id="48">woeb.site</option>
+                                            <option value="2163" data-select2-id="49">voeb.online</option>
+                                            <option value="2166" data-select2-id="50">voeb.site</option>
+                                            <option value="2169" data-select2-id="51">qoeb.online</option>
+                                            <option value="2172" data-select2-id="52">qoeb.site</option>
+                                            <option value="2175" data-select2-id="53">poeb.online</option>
+                                            <option value="2178" data-select2-id="54">poeb.site</option>
+                                            <option value="2187" data-select2-id="55">hoeb.online</option>
+                                            <option value="2190" data-select2-id="56">hoeb.site</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mt-15">
+                                    <div class="col-sm-12 ">
+                                        <div class="checkbox availableDomainsOkCheck"> <label
+                                                class=" availableDomainsOk" style="display: inline-block;">
+                                                <input type="checkbox" class="yesDomain" style="margin-top:0px;"
+                                                    data-lfv-initialized="true" data-lfv-message-id="_message"> Yes, I
+                                                would like to use domain <strong class="linkColor">jebab.click</strong>
+                                                as a tracking domain in my Advertica tracking links and ad tags.
+                                            </label> <span id="_message" class=""></span></div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center mt-25">
+                                    <div class="col-4">
+                                        <div class="main-btn">Send Request</div>
+                                    </div>
+                                </div>
+                                <div class="content-list mt-40">
+                                    <p class="col-sm-12 m-b genIcons mb-25"> <i class="fa fa-info-circle posIcons"
+                                            aria-hidden="true"></i> Each of the available
+                                        domains is a newly registered domain that will be assigned only to one
+                                        publisher. Nobody else but you will use the
+                                        domain in their tracking links or ad tags. </p>
+                                    <p class="col-md-12 m-b genIcons mb-25"> <i class="fa fa-info-circle posIcons"
+                                            aria-hidden="true"></i> If you need a special
+                                        domain, please contact us and we will do our best to register it for you! </p>
+                                    <p class="col-md-12 m-b genIcons mb-25"> <img class="posIcons"
+                                            src="https://cdn.affilist.net/images/bulbIdeal.png"> Custom
+                                        domains are ideal for traffic from Facebook and similar websites where classic
+                                        ad links and ad tags are often
+                                        blocked because of promotion methods of some of the publishers. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>
+                                    My Custom Domains
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-30">Below you can find a list of the custom domains that have been assigned
+                                    to your account and are available for use in
+                                    your Advertica tracking links and ad tags.</p>
+                                <p class="text-center fw-bold">No custom tracking domains assigned to your account yet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer start  -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-center justify-content-center">
+                        <script>document.write(new Date().getFullYear())</script> © Advertica International FZE | All
+                        rights reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer start  -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/dataTable.min.js"></script>
+    <script src="assets/js/dataTableBootstrap5.min.js"></script>
+    <script src="assets/js/jquery.flot.js"></script>
+    <script src="assets/js/jquery.flot.resize.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/responsive.bootstrap.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+
+    <!-- select 2 -->
+    <script>
+        $('.select2').select2();
+    </script>
+    <!-- data table -->
+    <script>
+        $('.table').DataTable({
+            responsive: true,
+        });
+    </script>
+
+
+</body>
+
+</html>

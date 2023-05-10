@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- All Css link -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/simplebar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/waves.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTable.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/flag-icons-main/css/flag-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2-bootstrap-5-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+
+
+
+    <!-- App Css-->
+    <link href="assets/css/app.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="navbar-items-left ">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-sm px-3 header-item  " id="vertical-menu-btn">
+                        <i class="fa-solid fa-bars align-middle"></i>
+                    </button>
+                    <!-- mail  -->
+                    <div class="d-none d-md-block">
+                        <button class="header-item" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-envelope align-middle"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Email area</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Archive</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- languages  -->
+                    <div class="dropdown d-none d-md-block">
+                        <button class="header-item mx-3" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/flags/us.jpg" alt="" srcset="" height="12">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/spain.jpg" alt="" height="16px" srcset="">
+                                    Spanish</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/germany.jpg" alt="" height="16px"
+                                        srcset="">German</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/italy.jpg" alt="" height="16px" srcset="">Italian</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/russia.jpg" alt="" height="16px"
+                                        srcset="">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-items-center">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box d-block d-md-none">
+                        <a href="index.html" class="logo">
+                            <span class="">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-items">
+                    <div class="header-item support d-none d-md-block"><a href="#"><span
+                                class="me-2 fw-semibold">Support</span><i class="fa-solid fa-life-ring "></i></a></div>
+                    <div class="dropdown">
+                        <button class="header-item dropdown-toggle d-none d-md-block" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            username@gmail.com
+                        </button>
+                        <button class="header-item dropdown-toggle d-block d-md-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu animated fadeInRight" id="snippet--earnignsStats">
+
+                            <li>
+                                <a href="#">Balance: <strong>$0.00 USD</strong></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Pending commission: $0.00 USD</p>
+                                    <p class="m-b-none">Confirmed commission: $0.00 USD</p>
+                                    <p class="m-b-none">Referral commission: $0.00 USD</p>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <div class="center">
+                                    <p class="m-b-xs">Extend login session by:</p>
+                                    <p class="m-b-none">
+                                        <a href="/default/extend-login/">6 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=12">12 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=24">1 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=48">2 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=168">7 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=720">30 d</a>
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="/sign/sign-out/">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="./dashboard.html" class="waves-effect">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./generate_ad_tag.html" class="waves-effect">
+                                <i class="fa-solid fa-tags"></i>
+                                <span>Generate Ad Tags</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./offers.html" class="waves-effect  ">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span>Offers (CPA)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./reports_country_report.html">Country Report</a></li>
+                                <li><a href="./reports_daily_report.html">Daily Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Detailed Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./detailed_reports_CPA_ads_reports.html">CPA Ads Reports</a></li>
+                                <li><a href="./detailed_reports_conversions_report.html">Conversions Reports</a></li>
+                                <li><a href="./detailed_reports_push_ads_reports.html">Push Ads Reports</a></li>
+                                <li><a href="./detailed_reports_subscribers_reports.html">Subscribers Reports</a></li>
+                                <li><a href="./detailed_reports_CPM_CPC_ads_reports.html">CPM/CPC Ads Reports</a></li>
+                                <li><a href="./detailed_reports_google_ADX_reports.html">Google Adx Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>My Account</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./myaccount_general_info.html">General Information</a></li>
+                                <li><a href="./myaccount_payment_preferences.html">Payment Prefarance</a></li>
+                                <li><a href="./myaccount_email_notifications.html">Email Notifications</a></li>
+                                <li><a href="./myaccount_s2s_settings.html">S2S Settings</a></li>
+                                <li><a href="./myaccount_s2s_log.html">S2S Logs</a></li>
+                                <li><a href="./myaccount_my_tracking_domains.html">My Tracking Domains</a></li>
+                                <li><a href="./myaccount_login_history.html">Login History</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./payments.html" class="waves-effect">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html" class="waves-effect">
+                                <i class="fa-solid fa-square-phone-flip"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <span>Affiliate Program</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./affiliate_program_promotion_tools.html">Promosion Tools</a></li>
+                                <li><a href="./affiliate_program_affiliate_statistic.html">Affiliate Statistics</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                <span>File Monitization</span>
+                                <span class="menu-tag">New</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./filemonitization_dashboard.html">Dashboard</a></li>
+                                <li><a href="./filemonitization_file_manager.html">File manager</a></li>
+                                <li><a href="./filemonitization_report.html">Report</a></li>
+                                <li><a href="./filemonitization_settings.html">Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <section class="content">
+                <div class="row equal-cols">
+                    <div class="col-lg-6 mb-25">
+                        <div class="card">
+                            <div class="card-header fw-bold">
+                                Last 10 days earnings
+                            </div>
+                            <div class="card-body text-center pb-0">
+                                <div class="legend " style="overflow: auto">
+                                    <table
+                                        style="font-size: smaller; color: rgb(240, 240, 240);  top: -5px; right: 20px; float: right; margin-top: 0 !important;margin-right: 16px;">
+                                        <tbody>
+                                            <tr>
+                                                <td class="legendColorBox">
+                                                    <div style="padding: 1px;">
+                                                        <div
+                                                            style="width: 4px; height: 0px; border: 5px solid rgb(153, 17, 0); overflow: hidden;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="legendLabel text-black">Google Ads</td>
+                                                <td class="legendColorBox">
+                                                    <div style="padding: 1px;">
+                                                        <div
+                                                            style="width: 4px; height: 0px; border: 5px solid rgb(246, 195, 6); overflow: hidden;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="legendLabel text-black">CPC/CPM</td>
+                                                <td class="legendColorBox">
+                                                    <div style="padding: 1px;">
+                                                        <div
+                                                            style="width: 4px; height: 0px; border: 5px solid rgb(0, 0, 153); overflow: hidden;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="legendLabel text-black">Push</td>
+                                                <td class="legendColorBox">
+                                                    <div style="padding: 1px;">
+                                                        <div
+                                                            style="width: 4px; height: 0px; border: 5px solid rgb(101, 189, 119); overflow: hidden;">
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="legendLabel text-black">CPA</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div id="chart-container text-center" style="width: 100%">
+
+                                    <div id="chart" style="box-sizing: border-box;"></div>
+                                </div>
+                            </div>
+                            <div class="card-footer padding-none background-none">
+                                <div class="row">
+                                    <div class="col-4 b-r b-light text-center">
+                                        <span class="h5 extra-font-bolder m-t block mt-10">$0.00</span>
+                                        <small class="text-muted m-b block mb-10">Today Earnings</small>
+                                    </div>
+                                    <div class="col-4 b-r b-light text-center">
+                                        <span class="h5 extra-font-bolder m-t block mt-10">$0.00</span>
+                                        <small class="text-muted m-b block mb-10">Yesterday Earnings</small>
+                                    </div>
+                                    <div class="col-4 b-light text-center">
+                                        <span class="h5 extra-font-bolder m-t block mt-10">$0.00</span>
+                                        <small class="text-muted m-b block mb-10">Total Unpaid</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-25">
+                        <div class="card pb-20">
+                            <div class="card-body no-padder min-panel_fix">
+                                <h1 class="text-center font-size-36 h1">Welcome to Advertica!</h1>
+                                <p class="text-center " style="font-size:80px;"> 🤝 </p>
+                                <p class="text-center mb-10"> The name changed. Nothing changes for you. </p>
+                                <p class="text-center mb-10"> This is your new Advertica (formerly Affilist) publisher
+                                    account.<br> Soon, we will invite
+                                    you to test a lot of new amazing features. </p>
+                                <p class="text-center mb-10"> Meanwhile, nothing changes for you and no action is needed
+                                    from
+                                    your side. </p>
+                                <p class="text-center mb-10"> <strong>We look forward to our further
+                                        cooperation!</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row equal-cols">
+                    <div class="col-lg-6 mb-25">
+                        <div class="card">
+                            <div class="card-header ">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a href="" class="nav-link active me-2" id="new-campaigns-tab"
+                                            data-bs-toggle="tab" data-bs-target="#new-campaigns" role="tab"
+                                            aria-controls="new-campaigns" aria-selected="true">New Campaigns</a>
+                                    </li>|
+                                    <li class="nav-item" role="presentation">
+                                        <a href="" class="nav-link ms-2" id="best-performing-tab" data-bs-toggle="tab"
+                                            data-bs-target="#best-performing" role="tab" aria-controls="best-performing"
+                                            aria-selected="false">Best Performing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card-body padding-none">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="new-campaigns" role="tabpanel"
+                                        aria-labelledby="new-campaigns-tab">
+                                        <div class="wrapper">
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..
+                                                            </p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p><span class="fi fi-af"></span></p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p><span class="fi fi-us"></p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="best-performing" role="tabpanel"
+                                        aria-labelledby="best-performing-tab">
+                                        <div class="wrapper">
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..
+                                                            </p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..
+                                                            </p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..
+                                                            </p>
+                                                            <p><span class="fi fi-us"></p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p>19 countries</p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="list-group ">
+                                                <a href="" class="campaign-row">
+                                                    <div class="list-inner">
+                                                        <div class="img">
+                                                            <img src="./assets/images/logo-lg.png" alt="">
+                                                        </div>
+                                                        <div class="list-title">
+                                                            <p class="font-size-13 fw-bold">Rotating content #..</p>
+                                                            <p><span class="fi fi-bd"></p>
+                                                        </div>
+                                                        <div class="payout">
+                                                            <p class="font-size-13">Payout: <span
+                                                                    class="fw-bold">Variable</span></p>
+                                                            <p>SMS Subscription</p>
+                                                        </div>
+                                                        <div class="icon">
+                                                            <i class="fa fa-arrow-right left"></i>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="font-size-13 fw-bold float-end">View More...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-25">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between">
+                                <div class="header-left d-flex">
+                                    <a href="" class="fw-bold pe-1">Top Sagments</a>|
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle border-none background-none fw-bold"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            style="color: #475d67;">
+                                            Direct Link
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Banner</a></li>
+                                            <li><a class="dropdown-item" href="#">Direct Link</a></li>
+                                            <li><a class="dropdown-item" href="#">PopUp</a></li>
+                                            <li><a class="dropdown-item" href="#">PopUnder</a></li>
+                                            <li><a class="dropdown-item" href="#">Redirect</a></li>
+                                            <li><a class="dropdown-item" href="#">TabUp</a></li>
+                                            <li><a class="dropdown-item" href="#">TabUnder</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-right font-size-12 float-end">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="today&yesterday-tab"
+                                                data-bs-toggle="tab" data-bs-target="#today&yesterday" type="button"
+                                                role="tab" aria-controls="today&yesterday" aria-selected="true">Today &
+                                                Yesterday</button>
+                                            <button class="nav-link" id="last7days-tab" data-bs-toggle="tab"
+                                                data-bs-target="#last7days" type="button" role="tab"
+                                                aria-controls="last7days" aria-selected="false">Last 7 days</button>
+                                            <button class="nav-link" id="last30days-tab" data-bs-toggle="tab"
+                                                data-bs-target="#last30days" type="button" role="tab"
+                                                aria-controls="last30days" aria-selected="false">Last 30 days</button>
+                                        </div>
+                                    </nav>
+
+                                </div>
+                            </div>
+                            <div class="card-body padding-none">
+                                <!-- tab body start (note: it is for dummy) -->
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="today&yesterday" role="tabpanel"
+                                        aria-labelledby="today&yesterday-tab">
+                                    </div>
+                                    <div class="tab-pane fade" id="last7days" role="tabpanel"
+                                        aria-labelledby="last7days-tab"></div>
+                                    <div class="tab-pane fade" id="last30days" role="tabpanel"
+                                        aria-labelledby="last30days-tab"></div>
+                                </div>
+                                <!-- tab body end -->
+                                <div class="wrapper top-segment ">
+                                    <table class="table margin-none text-center">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td class="text-start">
+                                                    <p><span class="fi fi-af"></span>Afghanistan</p>
+                                                </td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td>
+                                                    <p>Vodaphone</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td class="text-start"><span class="fi fi-ax"></span>Aland Islands</td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td>
+                                                    <p>T-Mobile</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td class="text-start"><span class="fi fi-dz"></span> Algeria</td>
+                                                <td><img src="./assets/images/device/1.png" alt=""></td>
+                                                <td><img src="./assets/images/device/ios.png" alt=""></td>
+                                                <td>
+                                                    <p>OTE</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td class="text-start"><span class="fi fi-ai"></span> Anguilla</td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td class="text-start"><span class="fi fi-ao"></span> Angola</td>
+                                                <td><img src="./assets/images/device/1.png" alt=""></td>
+                                                <td><img src="./assets/images/device/ios.png" alt=""></td>
+                                                <td>
+                                                    <p>NOVA</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td class="text-start"><span class="fi fi-ai"></span> Anguilla</td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td>
+                                                    <p>NOS</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td class="text-start"><span class="fi fi-aq"></span> Antarctica</td>
+                                                <td><img src="./assets/images/device/1.png" alt=""></td>
+                                                <td><img src="./assets/images/device/ios.png" alt=""></td>
+                                                <td>
+                                                    <p>Etisalat</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td class="text-start"><span class="fi fi-am"></span> Armenia</td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td><img src="./assets/images/device/ios.png" alt=""></td>
+                                                <td>
+                                                    <p>Vodaphone</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td class="text-start">
+                                                    <p><span class="fi fi-af"></span>Afghanistan</p>
+                                                </td>
+                                                <td><img src="./assets/images/device/1.png" alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td>
+                                                    <p>NOS</p>
+                                                </td>
+                                                <td>
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td class="text-start">
+                                                    <p><span class="fi fi-af"></span>Afghanistan</p>
+                                                </td>
+                                                <td><img src="./assets/images/device/2.png" alt=""></td>
+                                                <td><img src="./assets/images/device/ios.png" alt=""></td>
+                                                <td>
+                                                    <p>NOVA</p>
+                                                </td>
+                                                <td class="text-right">
+                                                    <p>eCPM <span class="fw-bold">$123.72 USD</span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <div class="filter-links">
+                                    <a href="" class="me-1">Simple</a>|<a href="" class="ms-1">Advance</a>
+                                </div>
+                                <div class="pagingDashboard">
+                                    <a href="">1</a>
+                                    <a href="">2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <p class="fw-bold">Your recent conversions</p>
+                                <i class="fa fa-cog questionSweet go-right"></i>
+                            </div>
+                            <div class="card-body padding-none">
+                                <section class="table-wrapper padding-none conversation-table">
+                                    <table id="#example" class="table table-bordered   nowrap " style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Time</th>
+                                                <th>Campaign ID</th>
+                                                <th>Source</th>
+                                                <th>Country</th>
+                                                <th>Device Type</th>
+                                                <th>Operating System</th>
+                                                <th>Browser</th>
+                                                <th>Carrier</th>
+                                                <th>Payouts</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Today</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-af"></span> Afghanistan</td>
+                                                <td class="text-center"><img src="./assets/images/device/1.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Today</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-ax"></span> Aland Islands</td>
+                                                <td class="text-center"><img src="./assets/images/device/2.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Yesterday</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-al"></span> Albania</td>
+                                                <td class="text-center"><img src="./assets/images/device/2.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>1 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-dz"></span> Algeria</td>
+                                                <td class="text-center"><img src="./assets/images/device/1.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-as"></span> American Samoa</td>
+                                                <td class="text-center"><img src="./assets/images/device/2.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>1 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-ad"></span> Andorra</td>
+                                                <td class="text-center"><img src="./assets/images/device/1.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>1 Month ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-ao"></span> Angola</td>
+                                                <td class="text-center"><img src="./assets/images/device/2.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>2 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-ai"></span> Anguilla</td>
+                                                <td class="text-center"><img src="./assets/images/device/1.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>1 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-aq"></span> Antarctica</td>
+                                                <td class="text-center"><img src="./assets/images/device/2.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/android.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1 week ago</td>
+                                                <td>8768535</td>
+                                                <td>File: OWED</td>
+                                                <td><span class="fi fi-ag"></span> Antigua</td>
+                                                <td class="text-center"><img src="./assets/images/device/1.png" alt="">
+                                                </td>
+                                                <td class="text-center"><img src="./assets/images/device/ios.png"
+                                                        alt=""></td>
+                                                <td class="text-center"><img src="./assets/images/browser/chrome.png"
+                                                        alt=""></td>
+                                                <td>Robi</td>
+                                                <td>$56.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </section>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="font-size-13 fw-bold float-end">View More...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer start  -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-center justify-content-center">
+                        <script>document.write(new Date().getFullYear())</script> © Advertica International FZE | All
+                        rights reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer start  -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/dataTable.min.js"></script>
+    <script src="assets/js/dataTableBootstrap5.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/responsive.bootstrap.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src="assets/js/jquery.flot.js"></script>
+    <script src="jquery.flot.time.min.js"></script>
+    <script src="jquery.flot.tooltip.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <!-- select 2 -->
+    <script>
+        $('.multiple-select-field').select2();
+    </script>
+    <script>
+        $('.table').DataTable({
+            responsive: true,
+        });
+    </script>
+    <script>
+        $(function () {
+            var data = [
+                {
+                    label: 'Label1',
+                    color: '#991100',
+                    data: [
+                        [new Date('2023-03-01').getTime(), 200],
+                        [new Date('2023-03-02').getTime(), 300],
+                        [new Date('2023-03-03').getTime(), 400],
+                        [new Date('2023-03-04').getTime(), 500]
+                    ]
+                }
+            ];
+
+            var options = {
+                series: {
+                    lines: {
+                        show: true
+                    },
+                    points: {
+                        show: true
+                    }
+                },
+                xaxis: {
+                    mode: 'time',
+                    timeformat: '%m.%d',
+                    tickLength: 0
+                },
+                yaxis: {
+                    tickFormatter: 0,
+                    tickLength: 0
+                },
+                legend: {
+                    position: 'nw',
+                    noColumns: 4,
+                    container: $('#chartLegend')
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true,
+                    borderColor: '#e0e0e0',
+                    markingsLineWidth: 1
+                },
+                tooltip: {
+                    show: true,
+                    content: '%s : %y'
+                }
+            };
+
+            var chart = $.plot('#chart', data, options);
+
+            function resizeChart() {
+                chart.resize();
+                chart.setupGrid();
+                chart.draw();
+            }
+
+            $(window).resize(function () {
+                resizeChart();
+            });
+
+
+        })
+    </script>
+
+
+
+</body>
+
+</html>

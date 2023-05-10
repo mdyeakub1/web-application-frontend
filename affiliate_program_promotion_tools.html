@@ -1,0 +1,981 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Affiliate Program Promotion Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- All Css link -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/simplebar.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/waves.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTable.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/jquery-jvectormap-2.0.5.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/flag-icons-main/css/flag-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/select2-bootstrap-5-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"
+        type="text/css" />
+
+
+
+    <!-- App Css-->
+    <link href="assets/css/app.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- Custom Css -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="navbar-items-left ">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo">
+                            <span class="logo-lg">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                    <button type="button" class="btn btn-sm px-3 header-item  " id="vertical-menu-btn">
+                        <i class="fa-solid fa-bars align-middle"></i>
+                    </button>
+                    <!-- mail  -->
+                    <div class="d-none d-md-block">
+                        <button class="header-item" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-regular fa-envelope align-middle"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Email area</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Archive</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- languages  -->
+                    <div class="dropdown d-none d-md-block">
+                        <button class="header-item mx-3" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./assets/images/flags/us.jpg" alt="" srcset="" height="12">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/spain.jpg" alt="" height="16px" srcset="">
+                                    Spanish</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/germany.jpg" alt="" height="16px"
+                                        srcset="">German</a></li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/italy.jpg" alt="" height="16px" srcset="">Italian</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><img class="me-2"
+                                        src="./assets/images/flags/russia.jpg" alt="" height="16px"
+                                        srcset="">Russian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-items-center">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box d-block d-md-none">
+                        <a href="index.html" class="logo">
+                            <span class="">
+                                <img src="assets/images/logo-lg.png" alt="logo-light" height="38">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-items">
+                    <div class="header-item support d-none d-md-block"><a href="#"><span
+                                class="me-2 fw-semibold">Support</span><i class="fa-solid fa-life-ring "></i></a></div>
+                    <div class="dropdown">
+                        <button class="header-item dropdown-toggle d-none d-md-block" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            username@gmail.com
+                        </button>
+                        <button class="header-item dropdown-toggle d-block d-md-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </button>
+                        <ul class="dropdown-menu animated fadeInRight" id="snippet--earnignsStats">
+
+                            <li>
+                                <a href="#">Balance: <strong>$0.00 USD</strong></a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <p class="m-b-none">Pending commission: $0.00 USD</p>
+                                    <p class="m-b-none">Confirmed commission: $0.00 USD</p>
+                                    <p class="m-b-none">Referral commission: $0.00 USD</p>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <div class="center">
+                                    <p class="m-b-xs">Extend login session by:</p>
+                                    <p class="m-b-none">
+                                        <a href="/default/extend-login/">6 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=12">12 h</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=24">1 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=48">2 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=168">7 d</a>
+                                        |
+                                        <a href="/default/extend-login/?hours=720">30 d</a>
+
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="/sign/sign-out/">Logout</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a href="./dashboard.html" class="waves-effect">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./generate_ad_tag.html" class="waves-effect">
+                                <i class="fa-solid fa-tags"></i>
+                                <span>Generate Ad Tags</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./offers.html" class="waves-effect  ">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <span>Offers (CPA)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./reports_country_report.html">Country Report</a></li>
+                                <li><a href="./reports_daily_report.html">Daily Report</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Detailed Reports</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./detailed_reports_CPA_ads_reports.html">CPA Ads Reports</a></li>
+                                <li><a href="./detailed_reports_conversions_report.html">Conversions Reports</a></li>
+                                <li><a href="./detailed_reports_push_ads_reports.html">Push Ads Reports</a></li>
+                                <li><a href="./detailed_reports_subscribers_reports.html">Subscribers Reports</a></li>
+                                <li><a href="./detailed_reports_CPM_CPC_ads_reports.html">CPM/CPC Ads Reports</a></li>
+                                <li><a href="./detailed_reports_google_ADX_reports.html">Google Adx Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-user-shield"></i>
+                                <span>My Account</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./myaccount_general_info.html">General Information</a></li>
+                                <li><a href="./myaccount_payment_preferences.html">Payment Prefarance</a></li>
+                                <li><a href="./myaccount_email_notifications.html">Email Notifications</a></li>
+                                <li><a href="./myaccount_s2s_settings.html">S2S Settings</a></li>
+                                <li><a href="./myaccount_s2s_log.html">S2S Logs</a></li>
+                                <li><a href="./myaccount_my_tracking_domains.html">My Tracking Domains</a></li>
+                                <li><a href="./myaccount_login_history.html">Login History</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./payments.html" class="waves-effect">
+                                <i class="fa-solid fa-credit-card"></i>
+                                <span>Payments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./contact_us.html" class="waves-effect">
+                                <i class="fa-solid fa-square-phone-flip"></i>
+                                <span>Contact Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                <span>Affiliate Program</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./affiliate_program_promotion_tools.html">Promosion Tools</a></li>
+                                <li><a href="./affiliate_program_affiliate_statistic.html">Affiliate Statistics</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="has-arrow  waves-effect">
+                                <i class="fa-sharp fa-solid fa-money-bill"></i>
+                                <span>File Monitization</span>
+                                <span class="menu-tag">New</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="./filemonitization_dashboard.html">Dashboard</a></li>
+                                <li><a href="./filemonitization_file_manager.html">File manager</a></li>
+                                <li><a href="./filemonitization_report.html">Report</a></li>
+                                <li><a href="./filemonitization_settings.html">Settings</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <section class="content">
+                <div class="row">
+                    <div class="col-md-6 mb-15">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Affilist Affiliate Program</p>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="fw-bold mb-10">Your Affiliate link:</p>
+                                <p class="mb-25">Recommend Affilist to a new webmaster and get up to 2.50% of each
+                                    payment he/she will
+                                    get from us. Lifetime!</p>
+                                <div class="clear-fix"></div>
+                                <div class="d-block mb-15 mt-40">
+                                    <span class="copy-link-btn ">https://affili.st/109740</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-15">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Affiliate Banners Rotator</p>
+                            </div>
+                            <div class="card-body text-center">
+                                <p class="fw-bold mb-10">Affiliate Ad Tag Generator</p>
+                                <p class="mb-10">Generate an Affiliate banner rotator ad tag, place it on your website
+                                    and let our system choose the best performing
+                                    banners in order to get as many referrals as possible.</p>
+                                <div class="d-block mb-15">
+                                    <button class="main-btn">Generate</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <p>Affiliate Banners</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="fw-bold text-center">Browse all Affiliate banners</p>
+                                <div class="wrapper text-center">
+                                    <p class="m-b-none"> Banner size: </p>
+                                    <div class="bannerSizesSelect m-b" data-select2-id="8">
+                                        <select class="select2-dropdown bannerSizes select2-hidden-accessible"
+                                            data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                            <option data-width="160" data-height="600" data-select2-id="14">160x600
+                                            </option>
+                                            <option data-width="300" data-height="250" selected="" data-select2-id="6">
+                                                300x250</option>
+                                            <option data-width="320" data-height="50" data-select2-id="15">320x50
+                                            </option>
+                                            <option data-width="468" data-height="60" data-select2-id="16">468x60
+                                            </option>
+                                            <option data-width="720" data-height="300" data-select2-id="17">720x300
+                                            </option>
+                                            <option data-width="728" data-height="90" data-select2-id="18">728x90
+                                            </option>
+                                            <option data-width="800" data-height="600" data-select2-id="19">800x600
+                                            </option>
+                                            <option data-width="120" data-height="600" data-select2-id="20">120x600
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="Affiliate Banners mt-30">
+                                    <div class="bannerShow  zoom-gallery size-160-600 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-160-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/22.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/160/600/22.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/22.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-160-600  col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/45.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/160/600/45.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/45.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-160-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/64.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/160/600/64.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/64.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-160-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/93.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/160/600/93.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/93.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-160-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/118.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/160/600/118.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/118.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-160-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/160/600/139.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/160/600/139.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/160/600/139.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-300-50 zoom-gallery">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="banner-300-50 ">
+                                                    <div class="customPanel m-b">
+                                                        <div class="bannerImages"> <a
+                                                                href="https://aff-aff.advertica-cdn.com/300/50/23.jpg">
+                                                                <img
+                                                                    src="https://aff-aff.advertica-cdn.com/300/50/23.jpg">
+                                                            </a> </div>
+                                                        <pre
+                                                            style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/50/23.jpg"/&gt;&lt;/a&gt;</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="banner-300-50 ">
+                                                    <div class="customPanel m-b">
+                                                        <div class="bannerImages"> <a
+                                                                href="https://aff-aff.advertica-cdn.com/300/50/46.jpg">
+                                                                <img
+                                                                    src="https://aff-aff.advertica-cdn.com/300/50/46.jpg">
+                                                            </a> </div>
+                                                        <pre
+                                                            style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/50/46.jpg"/&gt;&lt;/a&gt;</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="banner-300-50 ">
+                                                    <div class="customPanel m-b">
+                                                        <div class="bannerImages"> <a
+                                                                href="https://aff-aff.advertica-cdn.com/300/50/67.jpg">
+                                                                <img
+                                                                    src="https://aff-aff.advertica-cdn.com/300/50/67.jpg">
+                                                            </a> </div>
+                                                        <pre
+                                                            style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/50/67.jpg"/&gt;&lt;/a&gt;</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="banner-300-50 ">
+                                                    <div class="customPanel m-b">
+                                                        <div class="bannerImages"> <a
+                                                                href="https://aff-aff.advertica-cdn.com/300/50/96.gif">
+                                                                <img
+                                                                    src="https://aff-aff.advertica-cdn.com/300/50/96.gif">
+                                                            </a> </div>
+                                                        <pre
+                                                            style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/50/96.gif"/&gt;&lt;/a&gt;</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="banner-300-50 ">
+                                                    <div class="customPanel m-b">
+                                                        <div class="bannerImages"> <a
+                                                                href="https://aff-aff.advertica-cdn.com/300/50/142.gif">
+                                                                <img
+                                                                    src="https://aff-aff.advertica-cdn.com/300/50/142.gif">
+                                                            </a> </div>
+                                                        <pre
+                                                            style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/50/142.gif"/&gt;&lt;/a&gt;</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-300-250 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-300-250 col-lg-2 col-md-4 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/300/250/24.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/300/250/24.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/250/24.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-300-250 col-lg-2 col-md-4 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/300/250/70.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/300/250/70.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/250/70.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-300-250 col-lg-2 col-md-4 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/300/250/99.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/300/250/99.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/250/99.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-300-250 col-lg-2 col-md-4 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/300/250/121.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/300/250/121.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/250/121.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-300-250 col-lg-2 col-md-4 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/300/250/145.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/300/250/145.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/300/250/145.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-320-50 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-320-50 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/320/50/25.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/320/50/25.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/320/50/25.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-320-50 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/320/50/47.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/320/50/47.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/320/50/47.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-320-50 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/320/50/73.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/320/50/73.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/320/50/73.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-320-50 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/320/50/102.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/320/50/102.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/320/50/102.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-320-50 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/320/50/148.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/320/50/148.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/320/50/148.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-468-60 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-468-60 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/26.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/468/60/26.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/26.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-468-60  col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/49.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/468/60/49.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/49.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-468-60 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/76.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/468/60/76.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/76.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-468-60 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/105.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/468/60/105.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/105.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-468-60 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/124.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/468/60/124.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/124.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-468-60 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/468/60/151.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/468/60/151.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/468/60/151.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-720-300 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/27.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/720/300/27.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/27.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/52.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/720/300/52.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/52.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/79.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/720/300/79.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/79.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/108.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/720/300/108.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/108.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/127.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/720/300/127.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/127.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-720-300 col-lg-4 col-md-6 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/720/300/154.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/720/300/154.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/720/300/154.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-728-90 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/28.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/728/90/28.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/28.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/53.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/728/90/53.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/53.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/82.jpg"> <img
+                                                                src="https://aff-aff.advertica-cdn.com/728/90/82.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/82.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/111.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/728/90/111.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/111.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/130.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/728/90/130.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/130.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-728-90 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/728/90/157.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/728/90/157.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/728/90/157.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-800-600 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/29.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/800/600/29.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/29.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/54.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/800/600/54.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/54.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/85.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/800/600/85.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/85.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/114.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/800/600/114.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/114.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/133.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/800/600/133.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/133.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-800-600 col-lg-3 col-md-4 col-sm-6 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/800/600/160.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/800/600/160.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/800/600/160.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bannerShow d-none zoom-gallery size-120-600 zoom-gallery">
+                                        <div class="row">
+                                            <div class="banner-120-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/120/600/42.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/120/600/42.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/120/600/42.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-120-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/120/600/61.jpg">
+                                                            <img src="https://aff-aff.advertica-cdn.com/120/600/61.jpg">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/120/600/61.jpg"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-120-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/120/600/90.gif">
+                                                            <img src="https://aff-aff.advertica-cdn.com/120/600/90.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/120/600/90.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-120-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/120/600/115.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/120/600/115.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/120/600/115.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                            <div class="banner-120-600 col-lg-2 col-md-3 col-sm-4 col-xs-6 ">
+                                                <div class="customPanel m-b">
+                                                    <div class="bannerImages"> <a
+                                                            href="https://aff-aff.advertica-cdn.com/120/600/136.gif">
+                                                            <img
+                                                                src="https://aff-aff.advertica-cdn.com/120/600/136.gif">
+                                                        </a> </div>
+                                                    <pre
+                                                        style="white-space: normal;">&lt;a href="https://affili.st/109740"&gt;&lt;img  src="https://aff-aff.advertica-cdn.com/120/600/136.gif"/&gt;&lt;/a&gt;</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer start  -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-center justify-content-center">
+                        <script>document.write(new Date().getFullYear())</script> © Advertica International FZE | All
+                        rights reserved
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer start  -->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-2.0.5.min.js"></script>
+    <script src="assets/js/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/dataTable.min.js"></script>
+    <script src="assets/js/dataTableBootstrap5.min.js"></script>
+    <script src="assets/js/jquery.flot.js"></script>
+    <script src="assets/js/jquery.flot.resize.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dataTables.fixedHeader.min.js"></script>
+    <script src="assets/js/responsive.bootstrap.min.js"></script>
+    <script src="assets/js/dataTables.responsive.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <!-- select 2 -->
+    <script>
+        $(".select2-dropdown").select2({
+            placeholder: "Select a value",
+            allowClear: true
+        });
+
+        $(".select2-dropdown").on("change", function () {
+            var value = $(this).val();
+            $(".Affiliate Banners").text(value);
+            console.log(value)
+        });
+        $(".select2-dropdown").val(value).trigger("change");
+    </script>
+    <script>
+        $('.table').DataTable({
+            responsive: true,
+        });
+    </script>
+
+</body>
+
+</html>
